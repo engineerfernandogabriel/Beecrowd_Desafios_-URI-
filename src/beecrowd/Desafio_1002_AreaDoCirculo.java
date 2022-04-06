@@ -15,7 +15,6 @@ SAÍDA
  resultado, caso contrário, você receberá "Presentation Error".
 */
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Desafio_1002_AreaDoCirculo {
