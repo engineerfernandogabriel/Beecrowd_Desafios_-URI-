@@ -1,4 +1,4 @@
-package src.beecrowd;
+package src.src.beecrowd.iniciante;
 
 /*
  A fórmula para calcular a área de uma circunferência é: area = π . raio2.
@@ -15,11 +15,12 @@ SAÍDA
  resultado, caso contrário, você receberá "Presentation Error".
 */
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Desafio_1002_AreaDoCirculo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         double A, raio;
 
         Scanner leitor = new Scanner(System.in);

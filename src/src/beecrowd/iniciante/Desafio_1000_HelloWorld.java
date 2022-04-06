@@ -1,4 +1,4 @@
-package src.beecrowd;
+package src.src.beecrowd.iniciante;
 
 /*
  O seu primeiro programa em qualquer linguagem de programação normalmente é o "Hello World!".

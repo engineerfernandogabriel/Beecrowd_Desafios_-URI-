@@ -1,4 +1,4 @@
-package src.beecrowd;
+package src.src.beecrowd.iniciante;
 
 /*
  Leia dois valores inteiros, no caso para variáveis A e B.
@@ -13,11 +13,12 @@ pelo valor correspondente à soma de A e B.
  Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
 */
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Desafio_1003_SomaSimples {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         int A, B, soma;
 
         Scanner leitor = new Scanner(System.in);
