@@ -25,7 +25,7 @@ public class Desafio_1002_AreaDoCirculo {
 
         Scanner leitor = new Scanner(System.in);
 
-        A = 10;
+        A = leitor.nextDouble();
 
         raio = A * 3.14159;
 
