@@ -17,5 +17,4 @@ public class Desafio_1000_HelloWorld {
 
 		System.out.println("Hello World!");
 	}
-
 }

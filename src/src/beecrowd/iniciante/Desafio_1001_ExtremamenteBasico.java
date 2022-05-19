@@ -32,5 +32,4 @@ public class Desafio_1001_ExtremamenteBasico {
 		
 		System.out.println("X = " + soma);
 	}
-
 }
