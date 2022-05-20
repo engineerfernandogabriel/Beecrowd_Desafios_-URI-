@@ -19,19 +19,17 @@ import java.util.Scanner;
 public class Desafio_1004_ProdutoSimples {
 
     public static void main(String[] args) throws IOException {
-        int A, B, PROD;
+        int A, B, prod;
 
         Scanner leitor = new Scanner(System.in);
 
         A = leitor.nextInt();
         B = leitor.nextInt();
 
-        PROD = A * B;
+        prod = A * B;
 
         leitor.close();
 
-        System.out.println("PROD = " + PROD);
-
-
+        System.out.println("PROD = " + prod);
     }
 }
