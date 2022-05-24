@@ -53,8 +53,5 @@ public class Desafio_1012_Area {
         System.out.println(String.format("TRAPEZIO: %.3f", areaTrapezio));
         System.out.println(String.format("QUADRADO: %.3f", areaQuadrado));
         System.out.println(String.format("RETANGULO: %.3f", areaRetangulo));
-
-
-
     }
 }
