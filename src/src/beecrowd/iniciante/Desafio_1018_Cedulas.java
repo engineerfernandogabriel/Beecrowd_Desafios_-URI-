@@ -42,7 +42,7 @@ public class Desafio_1018_Cedulas {
         notas2 = notas / 2;
         notas = notas - (notas2 * 2);
 
-        notas1 = notas / 1;
+        notas1 = notas;
 
         teclado.close();
 
