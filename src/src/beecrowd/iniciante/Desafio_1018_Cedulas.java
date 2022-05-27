@@ -54,6 +54,5 @@ public class Desafio_1018_Cedulas {
         System.out.println(notas5 + " nota(s) de R$ 5,00");
         System.out.println(notas2 + " nota(s) de R$ 2,00");
         System.out.println(notas1 + " nota(s) de R$ 1,00");
-
     }
 }
