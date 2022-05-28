@@ -30,13 +30,51 @@ public class Desafio_1021_NotasEMoedas {
         int valorNotas = (int) (valor / 1);
         int valorMoedas = (int) ((valor - valorNotas) * 100);
 
-        //NOTAS -> usar a variável valorInt
+        //NOTAS -> usar a variável valorNotas
         int notas100 = valorNotas / 100;
+        int notas = valorNotas - (notas100 * 100);
+        int notas50 = notas / 50;
+        notas = notas - (notas50 * 50);
+        int notas20 = notas / 20;
+        notas = notas - (notas20 * 20);
+        int notas10 = notas / 10;
+        notas = notas - (notas10 * 10);
+        int notas5 = notas / 5;
+        notas = notas - (notas5 * 5);
+        int notas2 = notas / 2;
+        notas = notas - (notas2 * 2);
+
+        //para as moedas de R$1,00 ainda usa-se o valor das notas, pois ainda tem como base os valores inteiros
+        int moedas1 = notas;
+
+        //MOEDAS -> para valores menores que R$1,00 usar a variável valorMoedas
+        int moedas50 = valorMoedas / 50;
+        int moedas = valorMoedas - (moedas50 * 50);
+        int moedas25 = moedas / 25;
+        moedas = moedas - (moedas25 * 25);
+        int moedas10 = moedas / 10;
+        moedas = moedas - (moedas10 * 10);
+        int moedas5 = moedas / 5;
+        moedas = moedas - (moedas5 * 5);
+        int moedas01 = moedas;
 
         teclado.close();
 
         System.out.println("NOTAS:");
         System.out.println(notas100 + " nota (s) de R$ 100.00");
+        System.out.println(notas50 + " nota (s) de R$ 50.00");
+        System.out.println(notas20 + " nota (s) de R$ 20.00");
+        System.out.println(notas10 + " nota (s) de R$ 10.00");
+        System.out.println(notas5 + " nota (s) de R$ 5.00");
+        System.out.println(notas2 + " nota (s) de R$ 2.00");
+        System.out.println("MOEDAS:");
+        System.out.println(moedas1 + " moeda (s) de R$ 1.00");
+        System.out.println(moedas50 + " moeda (s) de R$ 0.50");
+        System.out.println(moedas25 + " moeda (s) de R$ 0.25");
+        System.out.println(moedas10 + " moeda (s) de R$ 0.10");
+        System.out.println(moedas5 + " moeda (s) de R$ 0.05");
+        System.out.println(moedas01 + " moeda (s) de R$ 0.01");
+
 
     }
 }
