@@ -36,7 +36,7 @@ public class Desafio_1040_Media3 {
         double nota3 = teclado.nextDouble();
         double nota4 = teclado.nextDouble();
 
-        double media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 4) + (nota4 * 1)) / 10;
+        double media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 4) + (nota4 * 1)) / 10.0;
 
         if(media >= 7){
             System.out.println(String.format("Media: %.1f", media));
