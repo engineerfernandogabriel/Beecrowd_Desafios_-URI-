@@ -19,7 +19,6 @@ SAÍDA
  */
 
 import java.io.IOException;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -49,11 +48,8 @@ public class Desafio_1045_TiposDeTriangulos {
         b = ordemDecrescente.get(1);
         c = ordemDecrescente.get(2);
 
-        if (a >= (b + c)){
-            System.out.println("NAO FORMA TRIANGULO");
-        }
-
-        if (Math.pow(a,2) == (Math.pow(b,2) + Math.pow(c,2))){
+        if (a < (b + c)){
+            if (Math.pow(a,2) == (Math.pow(b,2) + Math.pow(c,2))){
                 System.out.println("TRIANGULO RENTAGULO");
             }
 
@@ -76,6 +72,10 @@ public class Desafio_1045_TiposDeTriangulos {
             }else if(c == a && b != c){
                 System.out.println("TRIANGULO ISOSCELES");
             }
-        }
+        } else{
+            System.out.println("NAO FORMA TRIANGULO");
+         }
+    }
+
 }
 
