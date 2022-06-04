@@ -24,20 +24,10 @@ public class Desafio_1044_Multiplos {
         int b = teclado.nextInt();
 
         teclado.close();
-
-        if (a > b) {
-            if ((a % b) == 0) {
-                System.out.println("Sao Multiplos");
-            } else {
-                System.out.println("Nao sao Multipplos");
-            }
-        }
-
-        if ((b % a) == 0) {
+        if ((a % b) == 0 || (b % a) == 0) {
             System.out.println("Sao Multiplos");
         } else {
             System.out.println("Nao sao Multiplos");
         }
-
     }
 }
