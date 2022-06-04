@@ -43,41 +43,39 @@ public class Desafio_1045_TiposDeTriangulos {
         ordemDecrescente.add(c);
 
         Collections.sort(ordemDecrescente);
+        Collections.reverse(ordemDecrescente);
 
-        List<Double> ordemCrescente = new ArrayList<Double>();
+        a = ordemDecrescente.get(0);
+        b = ordemDecrescente.get(1);
+        c = ordemDecrescente.get(2);
 
-        System.out.println(ordemDecrescente);
-        for (int i = 0; i < ordemDecrescente.size(); i++) {
-            System.out.println(ordemCrescente[i - i - 1]);
+        if (a >= (b + c)){
+            System.out.println("NAO FORMA TRIANGULO");
+        }
 
-//
-//        if (a >= (b + c)){
-//            System.out.println("NAO FORMA TRIANGULO");
-//        }
-//
-//        if (Math.pow(a,2) == (Math.pow(b,2) + Math.pow(c,2))){
-//            System.out.println("TRIANGULO RENTAGULO");
-//        }
-//
-//        if(Math.pow(a,2) > (Math.pow(b,2) + Math.pow(c,2))){
-//            System.out.println("TRIANGULO OBTUSANGULO");
-//        }
-//
-//        if(Math.pow(a,2) < (Math.pow(b,2) + Math.pow(c,2))){
-//            System.out.println("TRIANGULO ACUTANGULO");
-//        }
-//
-//        if(a == b && b == c){
-//            System.out.println("TRIANGULO EQUILATERO");
-//        }
-//
-//        if(a == b && a != c ){
-//            System.out.println("TRIANGULO ISOSCELES");
-//        }else if(b == c && b != a){
-//            System.out.println("TRIANGULO ISOSCELES");
-//        }else if(c == a && b != c){
-//            System.out.println("TRIANGULO ISOSCELES");
-//        }
-    }
+        if (Math.pow(a,2) == (Math.pow(b,2) + Math.pow(c,2))){
+                System.out.println("TRIANGULO RENTAGULO");
+            }
+
+            if(Math.pow(a,2) > (Math.pow(b,2) + Math.pow(c,2))){
+                System.out.println("TRIANGULO OBTUSANGULO");
+            }
+
+            if(Math.pow(a,2) < (Math.pow(b,2) + Math.pow(c,2))){
+                System.out.println("TRIANGULO ACUTANGULO");
+            }
+
+            if(a == b && b == c){
+                System.out.println("TRIANGULO EQUILATERO");
+            }
+
+            if(a == b && a != c ){
+                System.out.println("TRIANGULO ISOSCELES");
+            }else if(b == c && b != a){
+                System.out.println("TRIANGULO ISOSCELES");
+            }else if(c == a && b != c){
+                System.out.println("TRIANGULO ISOSCELES");
+            }
+        }
 }
 
