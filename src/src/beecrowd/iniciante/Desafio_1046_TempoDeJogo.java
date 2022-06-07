@@ -28,13 +28,13 @@ public class Desafio_1046_TempoDeJogo {
         int tempoDuracao = 0;
 
         if(horaInicial == horaFinal){
-            System.out.println("O JOGO DUROU 24 HORA (S)");
+            System.out.println("O JOGO DUROU 24 HORA(S)");
         } else if(horaInicial > horaFinal){
             tempoDuracao = (24 - horaInicial) + horaFinal;
-            System.out.println("O JOGO DUROU " + tempoDuracao + " HORA (S)");
+            System.out.println("O JOGO DUROU " + tempoDuracao + " HORA(S)");
         } else if (horaInicial < horaFinal) {
             tempoDuracao = (horaFinal - horaInicial);
-            System.out.println("O JOGO DUROU " + tempoDuracao + " HORA (S)");
+            System.out.println("O JOGO DUROU " + tempoDuracao + " HORA(S)");
         }
     }
 }
