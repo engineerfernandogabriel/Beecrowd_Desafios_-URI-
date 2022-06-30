@@ -46,12 +46,19 @@ public class Desafio_1061_TempoDeUmEvento {
         dots = input.next();
         int segundoFinal = input.nextInt();
 
-        int horas = (24 - horaInicial) + horaFinal;
-        int minutos = minutoFinal - minutoInicial;
-        int segundos = segundoFinal - segundoInicial;
-        int dia = (diaFinal - diaInicial) - 1;
+        int dias = 0, horas = 0, minutos = 0, segundos = 0;
 
-        System.out.println(dia + " dia(s)");
+        if(diaFinal != diaInicial){
+            dias = (diaFinal - diaInicial) - 1;
+            horas = (24 - horaInicial) + horaFinal;
+            minutos = minutoFinal - minutoInicial;
+            segundos = segundoFinal - segundoInicial;
+        } else {
+            minutos = minutoFinal - minutoInicial;
+            segundos = segundoFinal - segundoInicial;
+        }
+
+        System.out.println(dias + " dia(s)");
         System.out.println(horas + " hora(s)");
         System.out.println(minutos + " minuto(s)");
         System.out.println(segundos + " segundo(s)");
