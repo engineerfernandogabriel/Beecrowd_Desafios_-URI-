@@ -33,13 +33,17 @@ public class Desafio_1061_TempoDeUmEvento {
         String nomeDiaInicial = input.next();
         int diaInicial = input.nextInt();
         int horaInicial = input.nextInt();
+        String dots = input.next();
         int minutoInicial = input.nextInt();
+        dots = input.next();
         int segundoInicial = input.nextInt();
 
         String nomeDiaFinal = input.next();
         int diaFinal = input.nextInt();
         int horaFinal = input.nextInt();
+        dots = input.next();
         int minutoFinal = input.nextInt();
+        dots = input.next();
         int segundoFinal = input.nextInt();
 
         int horas = (24 - horaInicial) + horaFinal;
