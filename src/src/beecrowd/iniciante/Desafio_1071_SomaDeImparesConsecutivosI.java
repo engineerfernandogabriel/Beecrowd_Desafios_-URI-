@@ -41,7 +41,7 @@ public class Desafio_1071_SomaDeImparesConsecutivosI {
         }else{
             menor++;
             for(int i = menor; i < maior; i += 2) {
-                soma += menor;
+                soma += i;
             }
         }
 
