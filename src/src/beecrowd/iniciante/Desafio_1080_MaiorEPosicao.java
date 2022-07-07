@@ -22,7 +22,7 @@ public class Desafio_1080_MaiorEPosicao {
         int posicao = 0;
         int numero = 0;
 
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= 100; i++) {
             int proximoNumero = input.nextInt();
 
             if (proximoNumero > numero) {
