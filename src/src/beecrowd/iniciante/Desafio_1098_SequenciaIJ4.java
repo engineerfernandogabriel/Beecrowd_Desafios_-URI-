@@ -14,29 +14,20 @@ import java.io.IOException;
 
 public class Desafio_1098_SequenciaIJ4 {
 
-    public static void main(String[] args) throws IOException{
-        int I = 0;
+    public static void main(String[] args) throws IOException {
+        double I = 0;
 
-        for(int i = 0; i < 2; i++){
+        while (I <= 2) {
             int cont = 0;
-            int J = 1;
+            double J = 1 + I;
 
-            while(cont < 3){
-                System.out.println("I=" + I + " J=" + J);
+            while (cont < 3) {
+                System.out.println(String.format("I= %.1f  J=%.1f", I, J));
                 J++;
                 cont++;
             }
-
-            double K = 1.2;
-            cont = 0;
-
-            while(cont < 3){
-                System.out.println("I=" + I + " J=" + K);
-                K++;
-                cont++;
-            }
-
-            I++;
+            I += 0.2;
         }
     }
 }
+
