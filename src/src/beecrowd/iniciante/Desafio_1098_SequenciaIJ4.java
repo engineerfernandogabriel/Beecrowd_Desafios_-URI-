@@ -18,7 +18,7 @@ public class Desafio_1098_SequenciaIJ4 {
         double I = 0;
 
         while (I <= 2) {
-            int cont = 0;
+            double cont = 0;
             double J = 1 + I;
 
             while (cont < 3) {
