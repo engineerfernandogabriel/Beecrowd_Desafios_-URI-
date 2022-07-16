@@ -22,15 +22,11 @@ public class Desafio_1132_MultiplosDe13 {
         int number1 = input.nextInt();
         int number2 = input.nextInt();
 
-        int maior = 0;
-        int menor = 0;
-
+        int maior = number1;
+        int menor = number2;
         int count = 0;
 
-        if(number1 >= number2) {
-            maior = number1;
-            menor = number2;
-        } else{
+        if(number1 < number2) {
             maior = number2;
             menor = number1;
         }
