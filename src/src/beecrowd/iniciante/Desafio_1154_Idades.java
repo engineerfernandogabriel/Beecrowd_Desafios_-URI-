@@ -24,7 +24,7 @@ public class Desafio_1154_Idades {
         Scanner input = new Scanner(System.in);
 
         int number =0;
-        int soma = 0;
+        double soma = 0;
         int count = 0;
 
         while(number >= 0){
@@ -35,7 +35,7 @@ public class Desafio_1154_Idades {
                 count++;
             }
         }
-        double media = (double) soma / count;
+        double media = soma / count;
         System.out.printf("%.2f", media);
     }
 }
