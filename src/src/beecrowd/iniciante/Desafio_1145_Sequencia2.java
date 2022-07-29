@@ -28,11 +28,13 @@ public class Desafio_1145_Sequencia2 {
         int count = 0;
 
         for(int i = 1; i <= secondNumber; i++){
-            System.out.print(i + " ");
+            System.out.print(i);
             count++;
             if(count == firstNumber){
                 System.out.println();
                 count = 0;
+            }else{
+                System.out.print(" ");
             }
         }
     }
