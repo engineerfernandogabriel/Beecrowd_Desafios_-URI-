@@ -34,7 +34,6 @@ public class Desafio_1145_Sequencia2 {
                 System.out.println();
                 count = 0;
             }
-
         }
     }
 }
