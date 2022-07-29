@@ -26,17 +26,15 @@ public class Desafio_1145_Sequencia2 {
         int firstNumber = input.nextInt();
         int secondNumber = input.nextInt();
         int count = 0;
-        int sequencieNumber = 1;
 
-        for(int i = 0; i < (secondNumber / firstNumber); i++){
-            do{
-                System.out.print(sequencieNumber + " ");
-                sequencieNumber++;
-                count++;
-            }while(count < firstNumber);
+        for(int i = 1; i <= secondNumber; i++){
+            System.out.print(i + " ");
+            count++;
+            if(count == firstNumber){
+                System.out.println();
+                count = 0;
+            }
 
-            count = 0;
-            System.out.println();
         }
     }
 }
