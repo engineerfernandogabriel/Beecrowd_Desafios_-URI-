@@ -29,7 +29,7 @@ public class Desafio_1101_SequenciaDeNumerosESoma {
             int number1 = input.nextInt();
             int number2 = input.nextInt();
 
-            if (number1 !=0 && number2 !=0){
+            if (number1 > 0 && number2 > 0){
                 bigger = Math.max(number1, number2);
                 lower = Math.min(number1,number2);
 
