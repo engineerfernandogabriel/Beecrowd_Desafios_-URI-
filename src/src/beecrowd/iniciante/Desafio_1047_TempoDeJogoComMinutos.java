@@ -21,28 +21,32 @@ public class Desafio_1047_TempoDeJogoComMinutos {
 
         Scanner input = new Scanner(System.in);
 
+        int horas = 0;
+        int minutos = 0;
+
         int initialHour = input.nextInt();
         int initialMinute = input.nextInt();
         int finalHour = input.nextInt();
         int finalMinute = input.nextInt();
 
-        int totalMinutes = finalMinute - initialMinute;
+        int totalMinutes = (60 - initialMinute) + finalMinute;
 
         int totalHour = finalHour - initialHour;
 
-        if(totalHour < 0){
-            totalHour = 24 + (finalHour - initialHour);
+        if(((60 - initialMinute) + finalMinute) >= 60){
+            minutos = ((60 - initialMinute) + finalMinute) - 60;
+        }else {
+            minutos = (60 - initialMinute) + finalMinute;
         }
 
-        if(totalMinutes < 0){
-            totalMinutes = 60 + (finalMinute - initialMinute);
-            totalHour--;
+        if(finalHour - initialHour > 0 && finalMinute < initialMinute){
+            horas = 0;
+        } else if(finalHour - initialHour > 1){
+            horas = finalHour - initialHour;
+        }else if(finalHour - initialHour == 0){
+            horas = 24;
         }
 
-        if(initialHour == initialHour && initialMinute == initialHour){
-            System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
-        }else{
-            System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)", totalHour, totalMinutes);
-        }
+      System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)", horas, minutos);
     }
 }
