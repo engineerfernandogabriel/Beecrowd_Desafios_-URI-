@@ -40,6 +40,8 @@ public class Desafio_1101_SequenciaDeNumerosESoma {
 
                 System.out.println("Sum=" + sum);
 
+                sum =0;
+
             } else{
                 continuous = false;
             }
