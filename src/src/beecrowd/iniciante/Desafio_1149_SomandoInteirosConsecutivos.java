@@ -17,7 +17,7 @@ SAíDA
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Deafio_1149_SomandoInteirosConsecutivos {
+public class Desafio_1149_SomandoInteirosConsecutivos {
 
     public static void main(String[] args) throws IOException {
 
