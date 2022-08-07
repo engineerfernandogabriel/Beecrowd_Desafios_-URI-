@@ -13,7 +13,7 @@ SAÍDA
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Desafios_1157_DivisoresI {
+public class Desafio_1157_DivisoresI {
 
     public static void main(String[] args) throws IOException{
 
