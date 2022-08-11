@@ -24,19 +24,14 @@ public class Desafio_1146_SequenciasCrescentes {
     public static void main(String[] args) throws IOException{
 
         Scanner input = new Scanner(System.in);
-        boolean test = true;
+        int numberSequencie = input.nextInt();
 
-        while(test){
-            int numberSequencie = input.nextInt();
-
-            if(numberSequencie > 0){
+        while(numberSequencie != 0){
               for(int i = 1; i <= numberSequencie; i++){
                   if(i != numberSequencie) System.out.printf("%d ", i);
                   else System.out.printf("%d\n", i);
               }
-            } else{
-                test = false;
-            }
+            numberSequencie = input.nextInt();
         }
     }
 }
