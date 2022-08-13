@@ -21,7 +21,7 @@ public class Desafio_1172_SubstituicoEmVetorI {
 
         Scanner input = new Scanner(System.in);
 
-        for(int i = 0; i <= 10; i++){
+        for(int i = 0; i < 10; i++){
             int numberIn = input.nextInt();
             int x = numberIn;
 
