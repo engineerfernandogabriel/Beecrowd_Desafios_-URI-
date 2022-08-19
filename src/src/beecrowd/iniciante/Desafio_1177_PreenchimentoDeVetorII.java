@@ -20,13 +20,15 @@ public class Desafio_1177_PreenchimentoDeVetorII {
         Scanner input = new Scanner(System.in);
 
         int number = input.nextInt();
+        int count = 0;
 
-        for(int i = 0; i < 1000;){
-            int count = 0;
-            while(count < number){
+        for(int i = 0; i < 1000; i++){
+            if(count < number){
                 System.out.printf("N[%d] = %d\n", i, count);
                 count++;
-                i++;
+            }else{
+                count = 0;
+                i--;
             }
         }
     }
