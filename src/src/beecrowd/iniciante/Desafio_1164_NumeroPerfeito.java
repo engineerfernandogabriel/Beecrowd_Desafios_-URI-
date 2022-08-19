@@ -17,7 +17,7 @@ SAÍDA
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Desafio_164_NumeroPerfeito {
+public class Desafio_1164_NumeroPerfeito {
 
     public static void main(String[] args) throws IOException{
 
@@ -26,10 +26,10 @@ public class Desafio_164_NumeroPerfeito {
         int testsNumber = input.nextInt();
 
         for(int i=0; i < testsNumber; i++){
-            int sum = 1;
+            int sum = 0;
             int number = input.nextInt();
 
-            for(int j=2; j < number; j++){
+            for(int j=1; j < number; j++){
                 if((number % j) == 0){
                     sum += j;
                 }
