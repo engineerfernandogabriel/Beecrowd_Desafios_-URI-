@@ -21,11 +21,12 @@ public class Desafio_1177_PreenchimentoDeVetorII {
 
         int number = input.nextInt();
 
-        for(int i = 0; i < 1000; i++){
+        for(int i = 0; i < 1000;){
             int count = 0;
             while(count < number){
                 System.out.printf("N[%d] = %d\n", i, count);
                 count++;
+                i++;
             }
         }
     }
