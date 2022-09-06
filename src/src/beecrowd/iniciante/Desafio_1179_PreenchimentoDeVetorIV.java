@@ -19,6 +19,7 @@ SAÍDA
  */
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Desafio_1179_PreenchimentoDeVetorIV {
@@ -27,8 +28,8 @@ public class Desafio_1179_PreenchimentoDeVetorIV {
 
         Scanner input = new Scanner(System.in);
 
-        int[] par = new int[5];
-        int[] impar = new int[5];
+        ArrayList<Integer> par = new ArrayList<>();
+        ArrayList<Integer> impar = new ArrayList<>();
         int count = 0;
         int x = 0;
         int y = 0;
@@ -37,24 +38,35 @@ public class Desafio_1179_PreenchimentoDeVetorIV {
             int number = input.nextInt();
 
             if (number % 2 == 0) {
-                par[x] = number;
+                par.add(number);
                 x++;
                 if (x > 4) {
-                    for (int i = 0; i < par.length; i++) {
-                        System.out.printf("par[%d] = %d\n", i, par[i]);
+                    for (int i = 0; i < par.size(); i++) {
+                        System.out.printf("par[%d] = %d\n", i, par.get(i));
                     }
+                    par.clear();
+                    x = 0;
                 }
             } else {
-                impar[y] = number;
+                impar.add(number);
                 y++;
                 if (y > 4) {
-                    for (int j = 0; j < impar.length; j++) {
-                        System.out.printf("impar[%d] = %d\n", j, impar[j]);
+                    for (int j = 0; j < impar.size(); j++) {
+                        System.out.printf("impar[%d] = %d\n", j, impar.get(j));
                     }
+                    impar.clear();
+                    y = 0;
                 }
-
-                count++;
             }
+            count++;
+        }
+
+        for (int j = 0; j < impar.size(); j++) {
+            System.out.printf("impar[%d] = %d\n", j, impar.get(j));
+        }
+
+        for (int i = 0; i < par.size(); i++) {
+            System.out.printf("par[%d] = %d\n", i, par.get(i));
         }
     }
 }
