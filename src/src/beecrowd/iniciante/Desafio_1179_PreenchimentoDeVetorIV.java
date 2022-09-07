@@ -31,31 +31,25 @@ public class Desafio_1179_PreenchimentoDeVetorIV {
         ArrayList<Integer> par = new ArrayList<>();
         ArrayList<Integer> impar = new ArrayList<>();
         int count = 0;
-        int x = 0;
-        int y = 0;
 
         while (count < 15) {
             int number = input.nextInt();
 
             if (number % 2 == 0) {
                 par.add(number);
-                x++;
-                if (x > 4) {
+                if (par.size() > 5) {
                     for (int i = 0; i < par.size(); i++) {
                         System.out.printf("par[%d] = %d\n", i, par.get(i));
                     }
                     par.clear();
-                    x = 0;
                 }
             } else {
                 impar.add(number);
-                y++;
-                if (y > 4) {
+                if (impar.size() > 5) {
                     for (int j = 0; j < impar.size(); j++) {
                         System.out.printf("impar[%d] = %d\n", j, impar.get(j));
                     }
                     impar.clear();
-                    y = 0;
                 }
             }
             count++;
