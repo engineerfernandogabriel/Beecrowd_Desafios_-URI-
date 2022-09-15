@@ -42,31 +42,25 @@ public class Desafio_1160_CrescimentoPopulacional {
         Scanner input = new Scanner(System.in);
 
         int tests = input.nextInt();
-        int count = 0;
 
-        while(count < tests){
+        for(int i = 1; i <= tests; i++){
             int populationA = input.nextInt();
             int populationB = input.nextInt();
             double populationIncreaseA = input.nextDouble();
             double populationIncreaseB = input.nextDouble();
             int sum = 0;
 
-            do{
+            while(populationA <= populationB){
                 int parserPopulationA = (int) (populationA + (populationA * (populationIncreaseA/100)));
-                int parserPopulationB = populationB;
-                if(populationIncreaseB !=0) {
-                    parserPopulationB = (int) (populationB + (populationB * (populationIncreaseB/100)));
-                }
+                int parserPopulationB = (int) (populationB + (populationB * (populationIncreaseB/100)));
 
                 populationA = parserPopulationA;
                 populationB = parserPopulationB;
                 sum++;
-            }while(populationA <= populationB);
+            }
 
             if(sum < 100) System.out.printf("%s anos\n", sum);
             else System.out.println("Mais de 1 seculo");
-
-            count++;
         }
     }
 }
