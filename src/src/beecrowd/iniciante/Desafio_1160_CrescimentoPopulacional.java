@@ -50,7 +50,7 @@ public class Desafio_1160_CrescimentoPopulacional {
             double populationIncreaseB = input.nextDouble();
             int anos = 0;
 
-            while(populationA <= populationB){
+            while(populationA <= populationB && anos < 100){
                 int parserPopulationA = (int) (populationA + (populationA * (populationIncreaseA/100)));
                 int parserPopulationB = (int) (populationB + (populationB * (populationIncreaseB/100)));
 
@@ -64,4 +64,3 @@ public class Desafio_1160_CrescimentoPopulacional {
         }
     }
 }
-
