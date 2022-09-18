@@ -25,27 +25,19 @@ public class Desafio_1176_FibonacciEmVetor {
 
         Scanner input = new Scanner(System.in);
 
+        long[] fibonacci = new long[60];
         int test = input.nextInt();
-        int count = 3;
 
-        for(int i = 0; i < test; i++){
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+
+        for(int i = 2; i < 60; i++) {
+            fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+        }
+
+        for(int j = 0; j < test; j++){
             int number = input.nextInt();
-
-            if(number == 0) System.out.printf("Fib(%d) = 0\n", number);
-            else if (number == 1 || number == 2) System.out.printf("Fib(%d) = 1\n", number);
-            else {
-                int actualNumber = 1;
-                int afterNumber = 1;
-                int nextSum = 0;
-                while(count <= number){
-                    nextSum =  actualNumber + afterNumber;
-                    afterNumber = actualNumber;
-                    actualNumber = nextSum;
-                    count++;
-                }
-                System.out.printf("Fib(%d) = %d\n", number, nextSum);
-                count = 3;
-            }
+            System.out.printf("Fib(%d) = %d\n", number, fibonacci[number]);
         }
     }
 }
