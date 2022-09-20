@@ -32,16 +32,14 @@ public class Desafio_1180_MenorEPosicao {
 
         int[] listNumbers = new int[numberElements];
 
-        for(int j = 0; j < listNumbers.length; j++){
-            number = input.nextInt();
-            listNumbers[j] = number;
-        }
-
         for(int i = 0; i < listNumbers.length; i++){
+            number = input.nextInt();
+            listNumbers[i] = number;
+
             if (i == 0){
                 position = i;
                 minorValue = listNumbers[i];
-            }else if(listNumbers[i] < listNumbers[i - 1]){
+            }else if(listNumbers[i] < minorValue){
                 position = i;
                 minorValue = listNumbers[i];
             }
