@@ -28,15 +28,22 @@ public class Desafio_1180_MenorEPosicao {
         int numberElements = input.nextInt();
         int position = 0;
         int minorValue = 0;
+        int number = 0;
+
         int[] listNumbers = new int[numberElements];
 
-        for(int i = 0; i < numberElements; i++){
-            int number = input.nextInt();
-            listNumbers[i] = number;
+        for(int j = 0; j < listNumbers.length; j++){
+            number = input.nextInt();
+            listNumbers[j] = number;
+        }
 
-            if(i > 0 && number < listNumbers[i - 1]){
+        for(int i = 0; i < listNumbers.length; i++){
+            if (i == 0){
                 position = i;
-                minorValue = number;
+                minorValue = listNumbers[i];
+            }else if(listNumbers[i] < listNumbers[i - 1]){
+                position = i;
+                minorValue = listNumbers[i];
             }
         }
 
