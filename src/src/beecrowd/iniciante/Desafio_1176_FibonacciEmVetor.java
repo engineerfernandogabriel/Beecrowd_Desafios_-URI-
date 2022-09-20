@@ -41,4 +41,3 @@ public class Desafio_1176_FibonacciEmVetor {
         }
     }
 }
-
