@@ -28,7 +28,7 @@ public class Desafio_1181_LinhaNaMatriz {
 
         Scanner input = new Scanner(System.in);
 
-        double[][] matriz = new double[3][3];
+        double[][] matriz = new double[12][12];
 
         int line = input.nextInt();
         String operation = input.next();
@@ -46,6 +46,6 @@ public class Desafio_1181_LinhaNaMatriz {
         }
 
         if (operation.equalsIgnoreCase("S")) System.out.printf("%.1f", sum);
-        else System.out.printf("%.1f", (sum / 3));
+        else System.out.printf("%.1f", (sum / 12));
     }
 }
