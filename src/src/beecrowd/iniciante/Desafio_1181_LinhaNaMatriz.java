@@ -36,8 +36,7 @@ public class Desafio_1181_LinhaNaMatriz {
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                double values = input.nextDouble();
-                matriz[i][j] = values;
+                matriz[i][j] = input.nextDouble();
             }
         }
 
