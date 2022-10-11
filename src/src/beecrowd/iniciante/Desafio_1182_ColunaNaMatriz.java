@@ -33,9 +33,9 @@ public class Desafio_1182_ColunaNaMatriz {
 
         int column = input.nextInt();
         String operation = input.next();
-        double sum =0;
+        double sum = 0;
 
-        for(int i =0; i < matriz.length; i++){
+        for(int i = 0; i < matriz.length; i++){
             for(int j = 0; j < matriz[i].length; j++){
                 matriz[i][j] = input.nextDouble();
             }
